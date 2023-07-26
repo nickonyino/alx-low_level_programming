@@ -3,6 +3,8 @@
 
 /**
 * _strcat - a function that concatenates two strings
+* @dest - input value
+* @src - input value
 * Return: m
 */
 
