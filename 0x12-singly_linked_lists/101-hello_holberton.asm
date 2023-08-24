@@ -1,16 +1,10 @@
-section .data
-hello db "Hello, Holberton", 0
-format db "%s", 10, 0
-
-section .text
-global main
-
+global   main
+	  extern    printf
 main:
-mov rdi, format
-mov rsi, hello
-xor rax, rax
-call printf
+	  mov   edi, format
+	  xor   eax, eax
+	  call  printf
+	  mov   eax, 0
+	  ret
+format: db `Hello, Holberton\n`,0
 
-mov rax, 60         ; syscall number for exit
-xor rdi, rdi        ; exit status 0
-syscall
