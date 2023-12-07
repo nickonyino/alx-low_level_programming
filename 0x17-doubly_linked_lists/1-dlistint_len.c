@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * dlistint_len - Returns the total 
+ * dlistint_len - Returns the total
  * number of elements in a dlistint_t list.
  * @h: Pointer to head of the doubly linked list.
  *
@@ -9,13 +9,12 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-    size_t count = 0;
+	size_t count = 0;
 
-    while (h != NULL)
-    {
-        h = h->next;
-        count++;
-    }
-
-    return count;
+	while (h != NULL)
+	{
+		h = h->next;
+		count++;
+	}
+	return (count);
 }
